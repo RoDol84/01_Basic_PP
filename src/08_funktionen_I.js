@@ -16,7 +16,7 @@ function test()
 // 2a. Parametrisierung + Datenübergabe von INNEN
 
 // call
-ausgabeNamen();
+// ausgabeNamen();
 
 // Funktionalität
 function ausgabeNamen() {
@@ -26,3 +26,15 @@ function ausgabeNamen() {
 }
 
 // console.log(firstName); // Fehler: Scope
+
+/***** Funktionen 02b *****/
+// 2b. Parametrisierung + Datenübergabe von AUSSEN
+
+ausgabeNamen2();
+ausgabeNamen2("Yasin"); // Argument --> Daten für Parameter
+ausgabeNamen2("Tarik");
+ausgabeNamen2("Sandra");
+
+function ausgabeNamen2(firstName) { // Parameter
+    console.log("Hallo, " + firstName  + "!");
+}
